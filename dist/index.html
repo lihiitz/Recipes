@@ -16,6 +16,16 @@
     <div id="container">
 
     </div>
+
+    <script id="container-template" type="text/x-handlebars-template">
+        {{#each recipe}}
+            <div>
+                <a href={{href}}>{{title}}</a>
+                <img src={{thumbnail}}>
+                <p>Ingredients:<br>{{ingredients}}</p>
+            </div>
+        {{/each}}
+    </script>
     <script src="Renderer.js"></script>
     <script src="main.js"></script>
 </body>
