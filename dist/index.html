@@ -11,7 +11,7 @@
 <body>
     <div id="header">
         <input placeholder="ingredient">
-        <button>SEARCH</button>
+        <button id="search">SEARCH</button>
     </div>
     <div id="container">
 
@@ -19,10 +19,10 @@
 
     <script id="container-template" type="text/x-handlebars-template">
         {{#each recipe}}
-            <div>
-                <a href={{href}}>{{title}}</a>
-                <img src={{thumbnail}}>
-                <p>Ingredients:<br>{{ingredients}}</p>
+            <div class="item">
+                <a class="title" href={{href}}>{{title}}</a>
+                <img class="picture" src={{thumbnail}}>
+                <p class="ingredients">Ingredients:<br>{{ingredients}}</p>
             </div>
         {{/each}}
     </script>
