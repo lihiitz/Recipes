@@ -26,6 +26,7 @@ body{
 
 }
 .item{
+    background-color: powderblue;
       display: grid;
       grid-template-columns: 3fr 2fr;
       grid-template-rows: 1fr 3fr;
@@ -33,6 +34,7 @@ body{
       "t t"
       "p i";
     border: solid black;
+    margin: 10px;
  
 }
 .ingredients{
