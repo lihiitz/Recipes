@@ -22,7 +22,12 @@
             <div class="item">
                 <a class="title" href={{href}}>{{title}}</a>
                 <img class="picture" src={{thumbnail}}>
-                <p class="ingredients">Ingredients:<br>{{ingredients}}</p>
+                <!-- <p class="ingredients">Ingredients<br>{{ingredients}}</p> -->
+                <ul class="ingredients">Ingredients
+                    {{#each ingredients}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
             </div>
         {{/each}}
     </script>

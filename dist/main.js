@@ -9,7 +9,8 @@ $(`button`).on(`click`, function(){
     })
 })
 $(`#container`).on(`click`, `img`, function(){
-    let ingredients = $(this).closest(`div`).find(`p`).text()
-    ingredients = ingredients.split(`:`)
-    console.log(ingredients[1].split(`,`)[0])
+    let ingredients = $(this).closest(`div`).find(`.ingredients`).children()
+    console.log(ingredients[0].innerHTML);
+    
+
 })
